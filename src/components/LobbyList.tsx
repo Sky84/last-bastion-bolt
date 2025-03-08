@@ -21,7 +21,7 @@ export const LobbyList: React.FC = () => {
         .from('lobbies')
         .select('*')
         .eq('started', false);
-      
+
       if (data) setLobbies(data);
     };
 
